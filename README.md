@@ -1,4 +1,4 @@
-# EDUsum-dataset
+# EDUsum-dataset（中文摘要生成数据集）
 EDUsum是我们文章中创建中文摘要生成数据集，为了中文摘要生成任务提供数据集、基准。
 
 ```
