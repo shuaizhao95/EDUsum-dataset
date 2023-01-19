@@ -10,6 +10,24 @@ EDUsum是我们文章中创建中文摘要生成数据集，为了中文摘要�
 }
 ```
 
+# 数据集划分
+
+```
+import csv
+data = []
+with open("教育.csv", "r", encoding='utf-8') as f:
+    reader = csv.reader(f)
+    for line in reader:
+        a = line[0]
+        b = line[1]
+        data.append((a,b))
+train_data = data[:8000]
+valid_data = data[8000:9000]
+test_data = data[9000:10000]
+```
+
+# 实验结果
+
 |         模型          | Rouge-L | Rouge-1 | Rouge-2 | 
 | :-------------------: | :------: |:---: |:---: |
 |      Seq2seq      |  44.13  | 48.62 | 32.32 |
